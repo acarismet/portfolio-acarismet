@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url("https://fastly.picsum.photos/id/13/2500/1667.jpg?hmac=SoX9UoHhN8HyklRA4A3vcCWJMVtiBXUg0W4ljWTor7s");
+  background-size: cover; /* Fit the image to cover the entire background */
+  background-position: center; /* Center the image */
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+h3 {
+  margin: 10px 0 20px;
+  color: #1f2921;
+  text-align: center;
+}
+
+.container {
+  width: 500px;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 14px;
+  background-color: #172323;
+  color: #fff;
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin: 0 5px 10px 0;
+}
+
+.tag.highlight {
+  background-color: #0989a6;
+}
+
+textarea {
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  border: none;
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  margin: 0 0 20px;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.live-header {
+  text-align: center;
+  background: linear-gradient(15deg, rgba(10,23,24,1) 0%, rgba(204,224,235,1) 91%, rgba(199,222,236,1) 100%);
+  background-size: 200% 200%;
+  border-radius: 15px;
+  color: white;
+  padding: 20px;
+  font-size: 2rem;
+  font-family: 'Arial', sans-serif;
+  text-transform: uppercase;
+  animation: animationName 5s infinite;
+  position: absolute;
+  top: 20px; /* Adjust this value as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1; /* Ensure it's on top of other content */
+}
+
+@keyframes animationName {
+  0% {
+    background-position: 200% 0;
+  }
+  50% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
